@@ -100,6 +100,7 @@ Single-letter words in STRING are kept as-is."
      do (setq prev char)
      finally return (apply #'string x))))
 
+;;;###autoload
 (defun elfeed-dearrow-update-title (entry)
   "Update title of elfeed ENTRY using DeArrow API."
   (when-let* ((url (elfeed-entry-link entry))
